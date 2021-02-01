@@ -18,8 +18,7 @@
   "lint-staged": {
     "*.{tsx,ts}": [
       "prettier --write",
-      "yarn lint",
-      "git add"
+      "yarn lint"
     ]
   },
   "dependencies": {
@@ -45,6 +44,7 @@
     "eslint-config-prettier": "^7.2.0",
     "eslint-plugin-react": "^7.22.0",
     "eslint-plugin-react-hooks": "^4.2.0",
+    "html-webpack-plugin": "^4.5.1",
     "husky": "^4.3.8",
     "prettier": "2.2.1",
     "stylelint": "^13.9.0",

@@ -1,4 +1,5 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   mode: 'development',
@@ -20,6 +21,14 @@ module.exports = {
       }
     ]
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      title: 'Free Game',
+      meta: {
+        viewport: 'width=device-width, initial-scale=1'
+      }
+    })
+  ],
   resolve: {
     modules: ['node_modules', path.resolve(__dirname, 'src')],
     extensions: ['.js', '.jsx', '.ts', '.tsx'],
