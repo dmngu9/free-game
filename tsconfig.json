@@ -6,7 +6,6 @@
     "allowJs": true,                      
     "checkJs": true,                       
     "jsx": "react",                     
-    "outDir": "build",                        
     "rootDir": "src",                       
     "removeComments": true,                
     "importHelpers": true,                 
