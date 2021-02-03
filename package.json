@@ -5,9 +5,11 @@
   "author": "Minh Nguyen",
   "license": "MIT",
   "scripts": {
+    "dev": "webpack-cli serve",
+    "build": "webpack",
     "type:check": "tsc",
-    "lint:ts": "eslint './src/**/*'",
-    "lint:css": "stylelint './src/**/*'",
+    "lint:ts": "eslint './src/**/*.{tsx,ts}'",
+    "lint:css": "stylelint './src/**/*.styles.ts'",
     "lint": "yarn lint:ts && yarn lint:css"
   },
   "husky": {

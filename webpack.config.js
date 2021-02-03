@@ -7,7 +7,6 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].[contenthash].bundle.js',
-    publicPath: '/assets/'
   },
   module: {
     rules: [
@@ -23,10 +22,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Free Game',
-      meta: {
-        viewport: 'width=device-width, initial-scale=1'
-      }
+      template: './src/index.html'
     })
   ],
   resolve: {
