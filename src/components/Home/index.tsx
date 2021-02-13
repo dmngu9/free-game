@@ -1,4 +1,4 @@
-import React, { FC, ReactElement } from 'react'
+import React, { ReactElement } from 'react'
 import GameList from 'components/GameList'
 import withErrorBoundary from 'hoc/withErrorBoundary'
 
