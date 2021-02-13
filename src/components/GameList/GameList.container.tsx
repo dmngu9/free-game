@@ -24,9 +24,6 @@ const GameListContainer = (): ReactElement => {
 			.catch(e => setErr(e.message))
 	}, [])
 
-	if (err) {
-		return <p>Unable to retrieve games. Reason: {err}</p>
-	}
 	return <GameListRender err={err} games={games} />
 }
 
