@@ -13,7 +13,7 @@ const GameCard = ({ content }: Props): ReactElement => {
 
 	return (
 		<Link to={link}>
-			<img src={thumbnail} />
+			<img alt={`${title}-logo`} src={thumbnail} />
 			<h2>{title}</h2>
 			<p>{short_description}</p>
 			<p>{genre}</p>
