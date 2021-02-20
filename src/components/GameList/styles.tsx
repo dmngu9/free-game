@@ -10,11 +10,11 @@ export const List = styled.ul`
 	box-sizing: border-box;
 
 	@media (min-width: ${breakpoints.tablet}) {
-		max-width: 752px;
+		max-width: ${breakpoints.tablet};
 	}
 
 	@media (min-width: ${breakpoints.desktop}) {
-		max-width: 1056px;
+		max-width: ${breakpoints.desktop};
 	}
 `
 
@@ -28,7 +28,7 @@ export const ListItem = styled.li`
 
 	@media (min-width: ${breakpoints.tablet}) {
 		display: inline-block;
-		max-width: 348px;
+		max-width: 332px;
 		margin-right: 24px;
 
 		&:nth-of-type(even) {
@@ -37,7 +37,7 @@ export const ListItem = styled.li`
 	}
 
 	@media (min-width: ${breakpoints.desktop}) {
-		max-width: 324px;
+		max-width: 312px;
 
 		&:nth-of-type(even) {
 			margin-right: 24px;
