@@ -7,6 +7,7 @@ import {
 	secondaryTextColor,
 	backgroundColor,
 } from 'styles/theme'
+import { breakpoints } from 'styles/breakpoints'
 
 export const StyledLink = styled(Link)`
 	width: 100%;
@@ -14,6 +15,10 @@ export const StyledLink = styled(Link)`
 	background-color: ${secondaryColor};
 	border-radius: 4px;
 	text-decoration: none;
+
+	@media (min-width: ${breakpoints.tablet}) {
+		height: 100%;
+	}
 `
 
 export const Img = styled.img`
